@@ -1,0 +1,62 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on shared package cache
+   0.022325300s  INFO prepare_target{force=false package_id=my_project v0.1.0 (D:\mugdho\RUST\code\my_project) target="my_project"}: cargo::core::compiler::fingerprint: fingerprint error for my_project v0.1.0 (D:\mugdho\RUST\code\my_project)/Check { test: false }/TargetInner { name: "my_project", doc: true, ..: with_path("D:\\mugdho\\RUST\\code\\my_project\\src\\main.rs", Edition2024) }
+   0.022408300s  INFO prepare_target{force=false package_id=my_project v0.1.0 (D:\mugdho\RUST\code\my_project) target="my_project"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\mugdho\RUST\code\my_project\target\debug\.fingerprint\my_project-0fb4d063dad34462\bin-my_project`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.035655700s  INFO prepare_target{force=false package_id=my_project v0.1.0 (D:\mugdho\RUST\code\my_project) target="my_project"}: cargo::core::compiler::fingerprint: fingerprint error for my_project v0.1.0 (D:\mugdho\RUST\code\my_project)/Check { test: true }/TargetInner { name: "my_project", doc: true, ..: with_path("D:\\mugdho\\RUST\\code\\my_project\\src\\main.rs", Edition2024) }
+   0.035692800s  INFO prepare_target{force=false package_id=my_project v0.1.0 (D:\mugdho\RUST\code\my_project) target="my_project"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\mugdho\RUST\code\my_project\target\debug\.fingerprint\my_project-534f5274c02a42f5\test-bin-my_project`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking my_project v0.1.0 (D:\mugdho\RUST\code\my_project)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.24s
